@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import DateInput from "./DateInput";
+import { useData } from "../Context/DataContext";
 
 const DateRange = () => {
-  const [initial, setInitial] = useState("");
-  const [end, setEnd] = useState("");
+  const { initial, setInitial, end, setEnd } = useData();
 
   return (
     <form
