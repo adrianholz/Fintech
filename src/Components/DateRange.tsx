@@ -10,6 +10,7 @@ const DateRange = () => {
       onSubmit={(event) => {
         event.preventDefault();
       }}
+      className="box flex"
     >
       <DateInput
         label="Initial Date"
